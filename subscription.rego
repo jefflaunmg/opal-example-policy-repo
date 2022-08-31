@@ -5,7 +5,7 @@ package app.subscription
 # import future.keywords.in
 # import future.keywords
 
-default allow := false
+default allow = false
 
 # find corresponding resource group that contain resource in the request
 eligible_res_groups[data.resource_groups[i].id] {
