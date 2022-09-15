@@ -22,6 +22,6 @@ eligible_policies[data.policies[i].id] {
 # check data source whether user has at least one policy required, and check expiry, return false if not exist or expired
 # otherwise, return true
 allow {
-	data.users[i].id == input.subject.id
+	data.users[i].user_id == input.subject.id
 	data.users[i].policies[_].id == eligible_policies[_]
 }
